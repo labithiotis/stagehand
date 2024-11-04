@@ -276,15 +276,15 @@ export class Stagehand {
     // This can be greatly improved, but the tldr is we put our built web scripts in dist, which should always
     // be one level above our running directly across evals, example, and as a package
     await this.page.addInitScript({
-      path: path.join(__dirname, "..", "dist", "dom", "build", "process.js"),
+      path: path.join("..", "dist", "dom", "build", "process.js"),
     });
 
     await this.page.addInitScript({
-      path: path.join(__dirname, "..", "dist", "dom", "build", "utils.js"),
+      path: path.join("..", "dist", "dom", "build", "utils.js"),
     });
 
     await this.page.addInitScript({
-      path: path.join(__dirname, "..", "dist", "dom", "build", "debug.js"),
+      path: path.join("..", "dist", "dom", "build", "debug.js"),
     });
 
     return { debugUrl, sessionUrl };
@@ -313,15 +313,15 @@ export class Stagehand {
 
     // Add initialization scripts
     await this.page.addInitScript({
-      path: path.join(__dirname, "..", "dist", "dom", "build", "process.js"),
+      path: path.join("..", "dist", "dom", "build", "process.js"),
     });
 
     await this.page.addInitScript({
-      path: path.join(__dirname, "..", "dist", "dom", "build", "utils.js"),
+      path: path.join("..", "dist", "dom", "build", "utils.js"),
     });
 
     await this.page.addInitScript({
-      path: path.join(__dirname, "..", "dist", "dom", "build", "debug.js"),
+      path: path.join("..", "dist", "dom", "build", "debug.js"),
     });
 
     return { context: this.context };
